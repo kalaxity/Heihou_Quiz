@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>平方完成自動出題</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+</head>
+<body onload="makeQuiz()">
+  <h1>平方完成自動出題BOT(ver2.5)</h1>
+  <span id="question"></span>の平方完成は？
+  <button id="answer" onclick="dispAns()">answer</button><br>
+  <span id="result"></span>
+  <button id="retry" onclick="makeQuiz()">リトライ</button><br>
+  <div id="graph"></div>
+  <br><br>
+  <p>直近の変更：2021/01/17 <br>└（今更ながら）省略できる項や係数を表示しないように変更。</p>
+  私的参考リンク：
+  <a href="http://www.eng.niigata-u.ac.jp/~nomoto/download/mathjax.pdf">MathJaxの使い方[PDF]</a>
+  <a href="https://ja.stackoverflow.com/questions/48544/%E6%95%B0%E5%BC%8F%E3%82%92javascript%E3%81%8B%E3%82%89%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%93%E3%81%A7html%E4%B8%8A%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%81%9B%E3%81%9F%E3%81%84mathmlmathjax">MathJax.Hub.Typesetの使い方</a>
+  <script src="quiz.js"></script>
+</body>
+</html>
+
